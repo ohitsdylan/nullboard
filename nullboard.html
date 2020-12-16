@@ -128,6 +128,8 @@
 
 		margin: 0 auto;
 		padding: 20px;
+
+		user-select: none;
 	}
 
 	body.crowded .board {
@@ -933,7 +935,7 @@
 	}
 
 	/***/
-	.dark .config {
+	.dark .config, .dark.crowded .config:hover {
 		background-color: #15171A;
 	}
 
@@ -971,7 +973,7 @@
 		color: #ccc;
 	}
 
-	.dark .logo {
+	.dark .logo, .dark.crowded .logo:hover {
 		background: #15171A;
 	}
 
@@ -1211,7 +1213,7 @@
 <script type="text/javascript">
 
 	//
-	var nb_codeVersion = 20200221;
+	var nb_codeVersion = 20200429;
 	var nb_dataVersion = 20190412;
 
 	//
